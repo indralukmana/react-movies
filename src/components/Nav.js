@@ -68,16 +68,28 @@ export default function Nav(props) {
           />
         </TabContainer>
         <TabContainer dir={theme.direction}>
-          <Movies query={{ movie: 'marvel' }} />
+          <Movies
+            query={{ movie: 'marvel' }}
+            setBanner={props.setBanner}
+          />
         </TabContainer>
         <TabContainer dir={theme.direction}>
-          <Movies query={{ movie: 'batman' }} />
+          <Movies
+            query={{ movie: 'batman' }}
+            setBanner={props.setBanner}
+          />
         </TabContainer>
         <TabContainer dir={theme.direction}>
-          <Movies query={{ movie: 'spiderman' }} />
+          <Movies
+            query={{ movie: 'spiderman' }}
+            setBanner={props.setBanner}
+          />
         </TabContainer>
         <TabContainer dir={theme.direction}>
-          <Movies query={{ movie: 'doraemon' }} />
+          <Movies
+            query={{ movie: 'doraemon' }}
+            setBanner={props.setBanner}
+          />
         </TabContainer>
       </SwipeableViews>
     </Container>
